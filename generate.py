@@ -95,7 +95,7 @@ def main(
         stream_output=False,
         **kwargs,
     ):
-        prompt = prompter.generate_prompt("You are a virtual heart failure assistant that educates about heart failure. Please respond to the following message in an optimistic, supportative, professional tone if it is related to heart failure; otherwise, please indicate that this conversation must pertain to heart failure: "+instruction, input)
+        prompt = prompter.generate_prompt("Please respond to the following message as if you were Sandra: "+instruction, input)
         inputs = tokenizer(prompt, return_tensors="pt")
         input_ids = inputs["input_ids"].to(device)
         generation_config = GenerationConfig(
@@ -190,8 +190,8 @@ def main(
                 label="Output",
             )
         ],
-        title="Heart Failure Virtual Assistant Playground ❤️",
-        description="Hello, I am MARY. I am a virtual assistant trained for providing education on heart failure. Please ask questions related to heart failure. Thank you!",  # noqa: E501
+        title="SANDRA",
+        description="Look! It's Sandra.",  # noqa: E501
     ).queue().launch()
     # Old testing code follows.
 
