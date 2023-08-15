@@ -1,0 +1,6 @@
+{
+    "description": "Template used for SANDRA.",
+    "prompt_input": "Below is a message by Sandra. Please write a message replicating the tone of this message. \n\n### Message:\n{instruction}\n\n### Input:\n{input}\n\n### Response:\n",
+    "prompt_no_input": "Below is a message by Sandra. Please write a message replicating the tone of this message. \n\n### Message:\n{instruction}\n\n### Input:\n{input}\n\n### Response:\n",
+    "response_split": "### Response:"    
+}
